@@ -10,9 +10,9 @@ marcos = Usuario("Marcos", "marcos@example.com")
 servidor = ServidorCorreo()
 
 # Enviar mensajes entre usuarios
-servidor.enviar_mensaje(nahuel, lucia, "Consulta sobre entrega", "Hola Lucía, ¿podés revisar mi código?")
-servidor.enviar_mensaje(lucia, nahuel, "Re: Consulta", "¡Claro Nahuel! Ahora lo reviso.")
-servidor.enviar_mensaje(marcos, lucia, "Reunión", "Lucía, ¿puedes asistir a la reunión mañana?")
+servidor.enviar_mensaje(nahuel, lucia, "Consulta sobre entrega", "Hola Lucía, ¿podrías revisar mi código?")
+servidor.enviar_mensaje(lucia, nahuel, "Re: Consulta", "Obvio, ahora lo reviso.")
+servidor.enviar_mensaje(marcos, lucia, "Reunión", "Lucía, ¿vas a asistir a la reunión de mañana?")
 servidor.enviar_mensaje(nahuel, marcos, "Material de estudio", "Marcos, te paso el material adjunto.")
 
 # Listado de mensajes que recibe cada usuario
@@ -35,8 +35,8 @@ print("Cuerpo original:", mensaje_prueba.get_cuerpo())
 mensaje_prueba.set_cuerpo("Nuevo cuerpo del mensaje.")
 print("Cuerpo modificado:", mensaje_prueba.get_cuerpo())
 
-# Prueva de que Carpeta funciona con varios mensajes
-print("\nMensajes en la carpeta de Lucía (usando Carpeta):")
+# Prueba de que Carpeta funciona con varios mensajes
+print("\nMensajes en la carpeta de Lucía:")
 for m in lucia.get_buzon().listar_mensajes():
     print(f"De: {m.get_emisor().get_nombre()} | Asunto: {m.get_asunto()} | Cuerpo: {m.get_cuerpo()}")
 
@@ -48,3 +48,4 @@ def enviar_a_inexistente():
         print("\nError al enviar mensaje a usuario inexistente:", e)
 
 enviar_a_inexistente()
+
