@@ -13,9 +13,7 @@ También se agregaron ejemplos de uso en el archivo `main.py`.
 
 ## Estructura del proyecto
 
-En esta segunda etapa, se hace entrega del conjunto de archivos corrspondientes al proyecto. Se incluye también el readme correspondiente. Del mismo modo se adjunta el link para acceder a la carpeta compartida donde se incluyen los diagramas UML realizados a lo largo del presente proyecto en formato .png:
-
-https://drive.google.com/file/d/13Ce4H6d9us4s-LEA_bBzaMHMpQPivK5k/view?usp=sharing
+En esta segunda etapa, se hace entrega del conjunto de archivos corrspondientes al proyecto. Se incluye el readme correspondiente, asi como la carpeta docs, donde se encuentra la documentacion y diagramas confeccionados.
 
 ```
 proyecto/
