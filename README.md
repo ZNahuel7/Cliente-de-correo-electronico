@@ -98,3 +98,4 @@ Este proyecto es de uso académico y educativo para la materia Estructura de Dat
 - Se implementó un encapsulamiento estricto con atributos privados y métodos de acceso controlado.
 - El diseño modular permite la facil extensión para futuras funcionalidades.
 - El arbol de carpetas permite organizar y buscar mensajes de forma eficiente y flexible.
+- Queda pendiente la elaboración de la infografía o video explicativo del árbol de carpetas.
