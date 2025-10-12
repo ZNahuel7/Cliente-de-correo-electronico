@@ -6,7 +6,7 @@ class Mensaje:
         self._asunto = asunto
         self._cuerpo = cuerpo
 
-    # Getters para acceder a los datos privados del mensaje de manera controlada
+    # Getters para acceder a los datos privados del mensaje
     def get_emisor(self):
         return self._emisor
 
