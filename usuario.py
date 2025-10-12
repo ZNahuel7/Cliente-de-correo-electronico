@@ -1,14 +1,14 @@
 from carpeta import Carpeta
 
-# Clase que representa a un usuario del sistema de correo.
+# Clase que representa a un usuario del sistema de correo electronico.
 class Usuario:
     def __init__(self, nombre, correo):
         self._nombre = nombre
         self._correo = correo
         self._buzon_entrada = Carpeta("Bandeja de entrada")
-        self._carpetas = [self._buzon_entrada]  # Lista de carpetas principales del usuario
+        self._carpetas = [self._buzon_entrada]  # Lista de carpetas del usuario
 
-    # Getters que permiten acceder a los datos privados del usuario de forma controlada
+    # Getters que permiten acceder a los datos privados del usuario.
     def get_nombre(self):
         # Devuelve el nombre del usuario
         return self._nombre
@@ -46,4 +46,5 @@ class Usuario:
     def recibir_mensaje(self, mensaje):
         #Agrega un mensaje a la bandeja de entrada del usuario.
         self._buzon_entrada.agregar_mensaje(mensaje)
+
 
